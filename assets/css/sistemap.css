@@ -1,0 +1,41 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.containersistemMap{
+    background-color: rgb(253, 253, 253);
+    padding: 5rem;
+}
+
+
+.Mapa h1{
+    font-family: 'Cabin', sans-serif;
+    font-style: medium;
+    font-size: 40px;
+    color:white;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.Mapa p{
+    font-family: 'Cabin', sans-serif;
+    font-style:oblique;
+    font-size: 20px;
+    color:white;
+    align-items: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.containerMaps{
+    background-color: rgba(255, 255, 255, 0.747);
+    box-shadow: 0px 2px 2px 2px rgba(163, 163, 163, 0.288);
+}
