@@ -51,8 +51,8 @@ html{
     flex-flow: wrap;
     justify-content:space-evenly;
     background: #0f20273b; 
-    background: -webkit-linear-gradient(to right, rgba(44, 83, 100, 0.199), #203a43d2, #0f2027d5), url(/assets/img/bg_seccion1.jpg);  
-    background: linear-gradient(to right, rgba(44, 83, 100, 0.13), #203a4360, #0f202733),url(/assets/img/bg_seccion1.jpg); 
+    background: -webkit-linear-gradient(to right, rgba(44, 83, 100, 0.199), #203a43d2, #0f2027d5), url(assets/img/bg_seccion1.jpg);  
+    background: linear-gradient(to right, rgba(44, 83, 100, 0.13), #203a4360, #0f202733),url(assets/img/bg_seccion1.jpg); 
 }
 
 @media (max-width:768px){
@@ -273,7 +273,7 @@ html{
 .seccionSecundaria{
     width: 100%;
     height: auto;
-    background-image: url(/assets/img/bg_seccion2.jpg);
+    background-image: url(assets/img/bg_seccion2.jpg);
     background-position: center;
     display: flex;
     flex-direction: column;
