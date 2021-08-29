@@ -1,5 +1,5 @@
-@import url(assets/css/style-header.css);
-@import url(assets/css/style-footer.css);
+@import url(/assets/css/style-header.css);
+@import url(/assets/css/style-footer.css);
 * {
   margin: 0px;
   padding: 0px;
@@ -55,8 +55,8 @@ html {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   background: #0f20273b;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(44, 83, 100, 0.13)), color-stop(#203a4360), to(#0f202733)), url(/assets/img/bg_seccion1.jpg);
-  background: linear-gradient(to right, rgba(44, 83, 100, 0.13), #203a4360, #0f202733), url(/assets/img/bg_seccion1.jpg);
+  background: -webkit-gradient(linear, left top, right top, from(rgba(44, 83, 100, 0.13)), color-stop(#203a4360), to(#0f202733)), url(assets/img/bg_seccion1.jpg);
+  background: linear-gradient(to right, rgba(44, 83, 100, 0.13), #203a4360, #0f202733), url(assets/img/bg_seccion1.jpg);
 }
 
 @media (max-width: 768px) {
@@ -328,7 +328,7 @@ html {
 .seccionSecundaria {
   width: 100%;
   height: auto;
-  background-image: url(/assets/img/bg_seccion2.jpg);
+  background-image: url(assets/img/bg_seccion2.jpg);
   background-position: center;
   display: -webkit-box;
   display: -ms-flexbox;
