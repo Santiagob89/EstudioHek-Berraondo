@@ -1,57 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/normalize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Contable Hek</title>
     <link
         href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
         integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/style-vencimientos.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 </head>
     
 <body class="body">
+    <!--Comienza header-->
+    <header class="header--position header--color">
+        <!-- bloque -->
 
+        <div id="linea-carga" class="linea-carga">
 
-
-    <header class="mainHeader">
+        </div>
         <!-- Logo -->
-        <div class="header-logo">
+        <div class="header__logo">
             <a href="index.html">
                 <img src="assets/img/logo.png" alt="EstudioHek">
             </a>
         </div>
-        <!-- contacto -->
-        <div class="navSecundario">
-            <ul class="navContacto">
-                <li id="contacto">294-4950389</li>
-                <li id="contacto">nfo@estudiohek.com.ar</li>
+
+        <!-- menu -->
+        <!-- bloque -->
+        <nav class="mainNav navbar-expand-lg navbar-dark ">
+
+            <div class="mainNav-container container-fluid">
+
+                <!-- bloque btn -->
+                <button class="mainNavBtn navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="mainNavbtn__icono navbar-toggler-icon"></span>
+                </button>
+
+                <div class="maiNav__contenedor collapse navbar-collapse" id="toggleMobileMenu">
+                    <ul class="mainNav__list navbar-nav me-auto text-center mb-2 mb-lg-0">
+                        <li class="mainNav__item">
+                            <a href="index.html" class="mainNav__link"><i class="fas fa-home"></i></a>
+                        </li>
+                        <li class="mainNav__item">
+                            <a href="index.html" class="mainNav__link">Servicios</a>
+                        </li>
+                        <li class="mainNav__item">
+                            <a href="index.html" class="mainNav__link">Novedades</a>
+                        </li>
+                        <li class="mainNav__item">
+                            <a href="index.html" class="mainNav__link">Equipo</a>
+                        </li>
+                        <li class="mainNav__item">
+                            <a href="" class="mainNav__link">Recursos</a>
+                            <ul class="mainNav__SubMenu">
+                                <li class="mainNav_subMenu__item">
+                                    <a href="vencimientos.html" class="mainNav__link">Vencimientos AFIP</a>
+                                </li>
+                                <li class="mainNav_subMenu__item">
+                                    <a href="Videos.html" class="mainNav__link">Videos Tutoriales</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a id="txtClient" href="http://45.176.91.39:8080/Abacus/" target="_blank">CloudClient</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="hide">
+            <i class="menu fas fa-bars"></i>Menu
+        </div>
+        </div>
+
+        <div class="header__contactos">
+            <ul class="header__contactos__list">
+                <li class="header__contactos__item">
+                    <i class=" heder_contactos--icono fas fa-phone"></i>294-4950389
+                </li>
+                <li class="header__contactos__item">
+                    <i class=" heder_contactos--icono fas fa-at"></i>nfo@estudiohek.com.ar
+                </li>
             </ul>
         </div>
-        <!-- menu -->
-        <div class="nav">
-            <nav class="navegacion">
-                <ul class="menu">
-                    <li><a href="index.html"><i class="fas fa-home"></i></a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="novedades.html">Novedades</a></li>
-                    <li><a href="equipo.html">Equipo</a></li>
-                    <li><a href="">Recursos</a>
-                        <ul class="subMenu">
-                            <li><a href="vencimientos.html">Vencimientos AFIP</a></li>
-                            <li><a href="Videos.html">Videos Tutoriales</a></li>
-                        </ul>
+
+    </header>
+        
+    <h1>AQUI SE VA A CREAR UN BLOG<h1>  
+    
+    <!-- footer -->
+    
+    <footer class="footer">
+    
+        <div class="footerLogo">
+            <a href="index.html">
+                <img src="assets/img/logo.png" alt="EstudioHek">
+            </a>
+        </div>
+        <div>
+            <!-- bloque -->
+            <nav class="navfooter">
+                <ul class="navfooter__list">
+                    <li class="navfooter__item">
+                        <a class="navfooter__link" href="index.html">Home</a>
                     </li>
-                    <li><a id="txtClient" href="http://45.176.91.39:8080/Abacus/" target="_blank">CloudClient</a></li>
+                    <li class="navfooter__item">
+                        <a class="navfooter__link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a class="navfooter__link" href="novedades.html">Novedades</a>
+                    </li>
+                    <li class="navfooter__item">
+                        <a class="navfooter__link" href="http://45.176.91.39:8080/Abacus/" target="_blank">CloudClient</a>
+                    </li>
                 </ul>
             </nav>
+    
         </div>
-    </header>
+        <!-- bloque -->
+        <!-- Suscribirte -->
+        <div class="suscripcion">
+            <H5 class="suscripcion__txt">Suscribité a nuestro boletín semana de información
+                laboral, impositiva y societaria.</H5>
+            <input class="suscricpion__input" type="email" placeholder="e mail" required><br>
+            <button class="boton__suscribirte">Suscribete</button>
+        </div>
+        <!-- Redes Sociales -->
+        <div class="redesSociales">
+    
+            <li><a href=""><i class="socialMedia fab fa-facebook-f"></i></a></li>
+            <li><a href=""><i class="socialMedia fab fa-instagram"></i></a></li>
+        </div>
+    
+        <div class="breadcrumb">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Blog</li>
+                </ol>
+            </nav>
+        </div>
+        <div class="copyright">
+            <h3>Copyright © 2021 - Todos los derechos reservados.</h3>
+        </div>
+    
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+        integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
+        crossorigin="anonymous"></script>
+    
+    <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- Start of HubSpot Embed Code -->
+    <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/6084846.js"></script>
+    <!-- End of HubSpot Embed Code -->
+    </body>
+    
+    </html>
 
-              <h1>EQUIPO<h1>        
+        
+        
 </body>
 </html>
