@@ -1,0 +1,51 @@
+
+
+.contenedor-videos{
+    background-color: white;
+    width: 100%;
+        h1{
+            text-align: center;
+            font-family: $fontext;
+            font-size: 3rem;
+        }
+            p{
+                font-family:$fontext;
+                color:$colorTerciario;
+                text-align: center;
+                font-size: map-get($font-saiz , 'texto' );
+            }
+}
+
+
+
+.galeria {
+    width: 100%;
+    padding: 1rem;
+    list-style: none;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (max-width:1024px){
+    .galeria{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50rem;
+        gap: 0.5rem;
+    }
+
+}
+
+@media (max-width:768px){
+    .galeria{
+        height: auto;
+        width: auto;
+        display: grid;
+        grid-template-columns: 50rem;
+        gap: 0.5rem;
+    }
+
+}

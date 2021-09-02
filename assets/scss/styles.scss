@@ -3,8 +3,16 @@
     padding: 0px;
     box-sizing: border-box;
 }
-@import url("style-header.css");
-@import url("style-footer.css");
+@import "style-header.scss";
+@import "style-footer.scss";
+@import "style-blog.scss";
+@import "_variables.scss";
+@import "style-videos";
+
+$colorPrincipal:#5CB9F2;
+$colorSecundario:rgb(255, 255, 255);
+$colorTerciario:rgb(000,000,00);
+$fontext: 'Cabin', sans-serif;
 
 
 .body{
@@ -30,7 +38,7 @@ html{
 @media (max-width:768px){
     .body{
         height: auto;
-        width: auto;
+        width: 100%;
     }
 
 }
@@ -563,13 +571,6 @@ html{
 
 
 /******** FIN CARRUSEL DE CLIENTES********/
-
-
-
-.videosTutoriales{
-    padding: 10px;
-    text-align: center;
-}
 
 
 
