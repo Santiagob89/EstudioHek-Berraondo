@@ -1,6 +1,6 @@
 .header--position {
   width: 100%;
-  height: 100px;
+  height: 5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,15 +15,20 @@
           align-items: center;
 }
 
-.header--color {
-  background-color: black;
+@media (max-width: 992px) {
+  .header--position {
+    height: auto;
+  }
 }
 
 @media (max-width: 768px) {
   .header--position {
-    width: 100%;
     height: auto;
   }
+}
+
+.header--color {
+  background-color: black;
 }
 
 .header__logo {
@@ -155,6 +160,9 @@
 
 @media (max-width: 768px) {
   .header__contactos {
+    display: none;
+  }
+  .header__logo {
     display: none;
   }
 }

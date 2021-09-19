@@ -8,6 +8,7 @@
 @import "style-blog.scss";
 @import "_variables.scss";
 @import "style-videos";
+@import "style-servicios";
 
 $colorPrincipal:#5CB9F2;
 $colorSecundario:rgb(255, 255, 255);
@@ -390,13 +391,23 @@ html{
     flex-direction: row;
 
 }
-
-@media (max-width:768px){
+@media (max-width:1024px){
     .seccionBlog{
+        height: auto;
         display: flex;
         flex-direction: column;
     }
 }
+
+@media (max-width:768px){
+    .seccionBlog{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
 
 
 .containerBlog{
@@ -409,7 +420,7 @@ html{
 @media (max-width:768px){
     .containerBlog{
         width: 100%;
-        height: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
     }
@@ -454,6 +465,12 @@ html{
     flex-direction: row;
 }
 
+@media (max-width:1024px){
+    .imagen{
+        display:none;
+    }
+}
+
 @media (max-width:768px){
     .imagen{
         display:none;
@@ -462,11 +479,19 @@ html{
 
 .container-txt{
     height: 80%;
-    width: 80%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #3D3333;
+}
+
+
+@media (max-width:1024px){
+    .container-txt{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media (max-width:768px){
@@ -490,6 +515,15 @@ html{
     text-align: center;
     color:white;
     padding: 10px;
+}
+
+
+
+@media (max-width:760px){
+    .txt-principal{
+    font-family: 'Cabin', sans-serif;
+    font-size: 10px;
+    }
 }
 
 @media (max-width:600px){

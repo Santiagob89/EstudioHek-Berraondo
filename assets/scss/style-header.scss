@@ -1,24 +1,33 @@
 .header--position{
     width: 100%;
-    height: 100px;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
+
+@media (max-width:992px){
+
+.header--position{
+    height: auto;
+}
+
+}
+
+@media (max-width:768px){
+
+.header--position{
+    height: auto;
+}
+
+}
+
 .header--color{
     background-color:black;
 }
 
-
-@media (max-width:768px){
-    .header--position{
-        width: 100%;
-        height: auto;
-    }
-
-}
 
 .header__logo{
     height: 100%;
@@ -134,6 +143,9 @@
 @media (max-width:768px){
 
 .header__contactos{
+    display: none;
+}
+.header__logo{
     display: none;
 }
 }

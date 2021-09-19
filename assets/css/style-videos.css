@@ -3,18 +3,110 @@
   width: 100%;
 }
 
-.tituloVideos {
+.contenedor-videos h1 {
   text-align: center;
+  font-family: "Cabin", sans-serif;
+  font-size: 3rem;
+}
+
+.contenedor-videos p {
+  font-family: "Cabin", sans-serif;
+  color: black;
+  text-align: center;
+  font-size: 1rem;
 }
 
 .galeria {
+  width: 100%;
+  padding: 1rem;
   list-style: none;
-  padding: 0;
   margin: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media (max-width: 1024px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50rem;
+        grid-template-columns: 50rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50rem;
+        grid-template-columns: 50rem;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 1024px) {
+  .galeria__item {
+    width: 1rem;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .galeria__item {
+    width: 1rem;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria__item {
+    width: 1rem;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 600px) {
+  .galeria__video {
+    width: 160;
+    height: 215;
+  }
 }
 /*# sourceMappingURL=style-videos.css.map */

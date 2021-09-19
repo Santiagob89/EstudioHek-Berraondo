@@ -26,7 +26,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-
+    <script src="/assets/js/main.js"></script>
 </head>
 
     <body class="body">
@@ -46,33 +46,28 @@
             
             <!-- menu -->
                                                         <!-- bloque -->
-                <nav class="mainNav navbar-expand-lg navbar-dark ">
-                    
-                    <div class="mainNav-container container-fluid">
-                        
+                <nav class="mainNav navbar-expand-lg navbar-light navbar-dark ">
+                    <div class="container-fluid">
                         <!-- bloque btn -->
-                        <button class="mainNavBtn navbar-toggler" type="button" 
-                        data-bs-toggle="collapse" 
-                        data-bs-target="#toggleMobileMenu"
-                        aria-controls="toggleMobileMenu" aria-expanded="false" 
-                        aria-label="Toggle navigation">
-                            <span class="mainNavbtn__icono navbar-toggler-icon"></span>
-                        </button> 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
                         
-                        <div class="maiNav__contenedor collapse navbar-collapse" id="toggleMobileMenu">
-                            <ul class="mainNav__list navbar-nav me-auto text-center mb-2 mb-lg-0">
-                                <li class="mainNav__item">
-                                    <a href="index.html" class="mainNav__link"><i class="fas fa-home"></i></a>
+                        <div class="maiNav__contenedor collapse navbar-collapse" id="navbarNavDropdown">
+                            <ul class="mainNav__list navbar-nav ">
+                                <li class="mainNav__item nav-item">
+                                    <a  class="mainNav__link nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
                                 </li> 
-                                <li class="mainNav__item">
-                                    <a href="#servicios" class="mainNav__link" >Servicios</a>
+                                <li class="mainNav__item nav-item">
+                                    <a href="#servicios" class="mainNav__link nav-link" >Servicios</a>
                                 </li>
-                                <li class="mainNav__item">
-                                    <a href="#novedades" class="mainNav__link">Novedades</a>
+                                <li class="mainNav__item nav-item">
+                                    <a href="#novedades" class="mainNav__link nav-link">Novedades</a>
                                 </li>
-                                <li class="mainNav__item">
-                                    <a href=""class="mainNav__link">Recursos</a>
-                                    <ul class="mainNav__SubMenu">
+                                <li class="mainNav__item nav-item">
+                                    <a href=""class="mainNav__link nav-link">Recursos</a>
+                                    <ul class="mainNav__SubMenu nav-item">
                                         <li class="mainNav_subMenu__item">
                                             <a href="vencimientos.html" class="mainNav__link">Vencimientos AFIP</a>
                                         </li>
@@ -81,16 +76,11 @@
                                         </li>
                                     </ul>
                                 </li>
-                                <li ><a id="txtClient" href="http://45.176.91.39:8080/Abacus/" target="_blank">CloudClient</a></li> 
+                                <li class="nav-item"><a class="nav-link" id="txtClient" href="http://45.176.91.39:8080/Abacus/" target="_blank">CloudClient</a></li> 
                             </ul>
                         </div>
                     </div>
                 </nav>  
-
-            <div class="hide">
-                <i class="menu fas fa-bars"></i>Menu
-            </div>
-            </div>
 
             <div class="header__contactos">
                 <form class="d-flex">
@@ -307,7 +297,7 @@
                             <a class="navfooter__link" href="index.html">Home</a>
                         </li> 
                         <li class="navfooter__item">
-                            <a class="navfooter__link" href="servicios.html">Servicios</a>
+                            <a class="navfooter__link" href="#servicios">Servicios</a>
                         </li>
                         <li class="navfooter__item">
                             <a class="navfooter__link" href="blog.html">Novedades</a>
@@ -345,15 +335,12 @@
             </div>
 
         </footer>
-        <script src="/assets/js/main.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
                 integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp"
                 crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
                 integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/"
                 crossorigin="anonymous"></script>
-
-        
         <script src="/assets/js/wow.js"></script>
         <script>
             new WOW().init();
@@ -361,6 +348,7 @@
         <!-- Start of HubSpot Embed Code -->
         <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/6084846.js"></script>
         <!-- End of HubSpot Embed Code -->
+        <script src="/assets/js/main.js"></script>
     </body>
 
 </html>
